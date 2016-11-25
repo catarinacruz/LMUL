@@ -57,7 +57,7 @@ p {
     }
 }
 a {
-    color: #42DCA3;
+    color: #a00202;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
@@ -65,18 +65,19 @@ a {
 a:focus,
 a:hover {
     text-decoration: none;
-    color: #1d9b6c
+    color: #890000;
 }
 .light {
     font-weight: 400
 }
+
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
+    border-bottom: 1px solid rgba(255, 255, 255, 0)
 }
 .navbar-custom .navbar-toggle {
     color: #fff;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, 0);
     font-size: 12px
 }
 .navbar-custom .nav li a:active,
@@ -96,7 +97,7 @@ a:hover {
     outline: 0
 }
 .navbar-custom a {
-    color: #fff
+    color: rgba(255, 255, 255, 0)
 }
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
@@ -104,17 +105,68 @@ a:hover {
     transition: background .3s ease-in-out
 }
 .navbar-custom .nav li a:hover {
-    color: rgba(255, 255, 255, .8)
+    color: rgba(255, 255, 255, 0)
 }
 .navbar-custom .nav li.active {
     outline: 0
 }
 .navbar-custom .nav li.active a {
-    background-color: rgba(255, 255, 255, .3)
+    background-color: rgba(255, 255, 255, 0)
 }
 .navbar-custom .nav li.active a:hover {
+    color:rgba(255, 255, 255, 0)
+}
+
+
+/*PARA REPOR VALORES NO COLLAPSE*/
+
+.navbar-custom.top-nav-collapse {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+.navbar-custom.top-nav-collapse .navbar-toggle {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+    font-size: 12px
+}
+.navbar-custom.top-nav-collapse .nav li a:active,
+.navbar-custom.top-nav-collapse .nav li a:focus,
+.navbar-custom.top-nav-collapse .nav li a:hover {
+    background-color: transparent;
+    outline: 0
+}
+.navbar-custom.top-nav-collapse .navbar-toggle:active,
+.navbar-custom.top-nav-collapse .navbar-toggle:focus {
+    outline: 0
+}
+.navbar-custom.top-nav-collapse .navbar-brand {
+    font-weight: 700
+}
+.navbar-custom.top-nav-collapse .navbar-brand:focus {
+    outline: 0
+}
+.navbar-custom.top-nav-collapse a {
     color: #fff
 }
+.navbar-custom.top-nav-collapse .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+.navbar-custom.top-nav-collapse .nav li a:hover {
+    color: rgba(255, 255, 255, .8)
+}
+.navbar-custom.top-nav-collapse .nav li.active {
+    outline: 0
+}
+.navbar-custom.top-nav-collapse .nav li.active a {
+    background-color: rgba(255, 255, 255, .3)
+}
+.navbar-custom.top-nav-collapse .nav li.active a:hover {
+    color: #fff
+}
+
+
 @media (min-width: 768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -145,25 +197,14 @@ a:hover {
 }
 .intro .intro-body {
     display: table-cell;
-    vertical-align: middle
-}
-.intro .intro-body .brand-heading {
-    font-size: 40px
-}
-.intro .intro-body .intro-text {
-    font-size: 18px
+    vertical-align: middle;
 }
 @media (min-width: 768px) {
     .intro {
         height: 100%;
         padding: 0
     }
-    .intro .intro-body .brand-heading {
-        font-size: 100px
-    }
-    .intro .intro-body .intro-text {
-        font-size: 26px
-    }
+
 }
 .btn-circle {
     align-content: center;
@@ -260,16 +301,16 @@ a:hover {
     border-radius: 0
 }
 .btn-default {
-    border: 1px solid #42DCA3;
-    color: #42DCA3;
+    border: 1px solid #a00202;
+    color: #840202;
     background-color: transparent
 }
 .btn-default:focus,
 .btn-default:hover {
-    border: 1px solid #42DCA3;
+    border: 1px solid #840202;
     outline: 0;
-    color: #000;
-    background-color: #42DCA3
+    color: #FFF;
+    background-color: #840202
 }
 ul.banner-social-buttons {
     margin-top: 0
@@ -290,10 +331,23 @@ ul.banner-social-buttons {
     }
 }
 footer {
-    padding: 50px 0
+    padding: 50px 0;
+    margin-top: 1em;
+    background: #a8a8a8;
 }
 footer p {
-    margin: 0
+    margin-left: 3em;
+    color: #757575;
+    font-size: 1em;
+    text-align: left;
+    float: left;
+    display: inline;
+}
+
+footer img{
+    margin-right: 3em;
+    float: right;
+    display: inline;
 }
 ::-moz-selection {
     text-shadow: none;
@@ -311,3 +365,27 @@ img::selection {
 img::-moz-selection {
     background: 0 0
 }
+
+.first-pannel{
+    width: 100%;
+    height: 100%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.first-pannel .arrow-down{  
+    display: block;
+    margin: 0 auto;
+}
+
+.first-pannel .arrow-down a{  
+    display: block;
+    margin: 0 auto;
+}
+
+.first-pannel .logo-white img{
+    width: 50%;
+    display: block;
+    margin: 0 auto 2em;
+}
+
