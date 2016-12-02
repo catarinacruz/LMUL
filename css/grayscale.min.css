@@ -266,12 +266,11 @@ a:hover {
 .content-section {
     padding-top: 100px
 }
-.download-section {
+.split-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    /*background: url(../img/intro-bg.jpg) center center no-repeat #000;*/
-    background: #000000;
+    background: url(../img/bg2.jpg) center center no-repeat #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -282,12 +281,23 @@ a:hover {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/intro-bg.jpg) center center no-repeat #000;*/
+    background: url(../img/bg3.jpg) center center no-repeat #000;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover
 }
+.char-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/bg1.jpg) center center no-repeat #000;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
+}
+
 
 #map {
     width: 100%;
@@ -298,7 +308,10 @@ a:hover {
     .content-section {
         padding-top: 5em;
     }
-    .download-section {
+    .split-section {
+        padding: 200px 0
+    }
+    .char-section {
         padding: 100px 0
     }
      .team-section {
@@ -409,6 +422,7 @@ img::-moz-selection {
   margin-bottom: 50px;
 }
 .team-member img {
+    width: 70%;
   margin: 0 auto;
   border: 7px solid white;
 }
@@ -420,4 +434,25 @@ img::-moz-selection {
 .team-member p {
   margin-top: 0;
     margin-bottom: 0;
+}
+li{
+list-style-type: none;
+}
+
+h6{
+    margin:2px;
+}
+
+.team-member a {
+    color: #ffffff;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.team-member a:hover{
+    color: #7c7c7c;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
 }

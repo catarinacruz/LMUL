@@ -8,12 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
 
     <title>HateLess</title>
-
+    
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- SweetAlert -->
+    <script src="dist/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="dist/sweetalert.css">
+    <!--.......................-->
+    
+    
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -98,23 +105,26 @@
         </header>
 
     <!-- Experience Section -->
-    <section id="experience" class="container content-section text-left">
+    <section id="experience" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 ">
+            <div class="col-lg-8 col-lg-offset-2">
                 <h2>The Experience</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo aliquet vehicula. In tincidunt malesuada ornare. Duis non vulputate risus. Etiam varius ante sit amet sollicitudin congue. In malesuada maximus elit, vitae malesuada libero egestas eget. Proin urna magna, aliquam eget dolor vitae, finibus fermentum sapien. Proin augue tellus, vehicula a felis nec, venenatis efficitur sem. Aenean non metus nibh. <a href="http://www.google.com" target="_blank">Ut quis mauris metus.</a> Fusce facilisis, neque vitae finibus scelerisque, odio nisi fringilla ipsum, quis condimentum ex justo eget ex. Vestibulum iaculis est enim, quis congue elit mollis et. Ut tempus facilisis sem sed pellentesque. Cras euismod iaculis malesuada.</p>
-
-<p>Proin vitae turpis a felis vulputate imperdiet. Pellentesque et sapien porttitor, consequat arcu in, malesuada sem. Suspendisse potenti. Donec interdum elit eu dui egestas elementum. Vestibulum feugiat eget tellus nec consequat. Praesent non iaculis urna. Morbi a ante vitae felis suscipit vestibulum. Proin scelerisque nunc vel risus pulvinar, quis eleifend nulla vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In pretium dictum urna, nec bibendum neque vehicula sit amet.</p>
-            </div>
+               <h5>We want to sensitize people to the consequences of online hate and make them understand that it has to stop.</h5> 
+                
+                <p>Internet allows us to create and share content with everyone. We can easily share our thoughts or ideias online, and receive rapid feedback. But this has opened a window to online hate - as it is so easy to speak your mind, you just do it and walk away. But what happens to the other person? Online hate has severe consequences, and anyone can be a victim. So it's important that we sensitize online users, specially young people, to it's consequences, and if possible, that we put an end to it.</p>
+                
+                <li>
+                        <a href="#" class="btn btn-default btn-lg" target="_blank"><span class="network-name">TRY THE EXPERIENCE</span></a>
+            </li>
         </div>
     </section>
     
     
     <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
+    <section id="split" class="content-section text-center">
+        <div class="split-section">
             <div class="container">
-
+                
             </div>
         </div>
     </section>
@@ -136,11 +146,61 @@
 
     <!-- Characters Section -->
     <section id="characters" class="content-section text-center">
-        <div class="download-section">
+        <div class="char-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>The Characters</h2>
-                    <p> We are a charity association that deals and supports people who have gone throught some sort of hate online.And we need your help helping more people</p>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                        <h2>Meet our Characters</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="team-member">
+                                <li class="veronica">
+                                    <img src="img/chars/1.jpg" class="img-responsive img-circle" alt="">
+                                    <h4>Veronica</h4>
+                                </li>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100006323946920" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="col-sm-3">
+                            <div class="team-member">
+                                <img src="img/chars/2.jpg" class="img-responsive img-circle" alt="">
+                                <h4>Juan</h4>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100006323946920" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="team-member">
+                                <img src="img/chars/3.jpg" class="img-responsive img-circle" alt="">
+                                <h4>Fernando</h4>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100006323946920" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="team-member">
+                                <img src="img/chars/4.jpg" class="img-responsive img-circle" alt="">
+                                <h4>Nashita</h4>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100006323946920" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,7 +224,7 @@
             <div class="container">
                 <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Meet our Team</h2>
+                    <h2>Meet our Team</h2>
                 </div>
             </div>
             <div class="row">
@@ -172,11 +232,11 @@
                     <div class="team-member">
                         <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
                         <h4>Alexandra Silva</h4>
-                        <p class="text-muted">MMTEC</p>
+                        <h6>MMTEC</h6>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/profile.php?id=100006323946920" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:up201607841@fe.up.pt"><i class="fa fa-envelope"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -185,11 +245,11 @@
                     <div class="team-member">
                         <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Ana Teixeira</h4>
-                        <p class="text-muted">MMEDU</p>
+                        <h6>MMEDU</h6>
                         <ul class="list-inline social-buttons">
-                             <li><a href="#"><i class="fa fa-facebook"></i></a>
+                             <li><a href="https://www.facebook.com/anne.shopie" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:up201009193@fc.up.pt"><i class="fa fa-envelope"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -198,11 +258,11 @@
                     <div class="team-member">
                         <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
                         <h4>Catarina Cruz</h4>
-                        <p class="text-muted">MIEEC</p>
+                        <h6>MIEEC</h6>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/catarina.cruz.2401" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:ee12172@fe.up.pt"><i class="fa fa-envelope"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -213,11 +273,11 @@
                     <div class="team-member">
                         <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
                         <h4>Daniela Ribeiro</h4>
-                        <p class="text-muted">MMCA</p>
+                        <h6>MMCA</h6>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/daniela.ribeiro.3994" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:up201600429@fe.up.pt"><i class="fa fa-envelope"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -226,11 +286,11 @@
                     <div class="team-member">
                         <img src="img/team/5.jpg" class="img-responsive img-circle" alt="">
                         <h4>Roman Koka</h4>
-                        <p class="text-muted">MOB</p>
+                        <h6>MOB</h6>
                         <ul class="list-inline social-buttons">
-                             <li><a href="#"><i class="fa fa-facebook"></i></a>
+                             <li><a href="https://www.facebook.com/roman.koka" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:up201601681@fe.up.pt"><i class="fa fa-envelope"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -239,11 +299,11 @@
                     <div class="team-member">
                         <img src="img/team/6.jpg" class="img-responsive img-circle" alt="">
                         <h4>Tomás Tavares</h4>
-                        <p class="text-muted">MIEEC</p>
+                        <h6>MIEEC</h6>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/iamtavarest" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a>
+                            <li><a href="mailto:ee12012@fe.up.pt"><i class="fa fa-envelope"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -304,5 +364,25 @@
     <script src="js/grayscale.min.js"></script>
 
 </body>
+
+
+<script>
+
+document.querySelector('li.veronica h4').onclick = function(){
+	swal({
+		title: "Veronica",
+		text: "Here's a custom image.",
+		imageUrl: 'img/chars/1.jpg'
+	});
+};
+
+document.querySelector('li.veronica img').onclick = function(){
+	swal({
+		title: "Veronica",
+		text: "Here's a custom image.",
+		imageUrl: 'img/chars/1.jpg'
+	});
+};
+</script>
 
 </html>
