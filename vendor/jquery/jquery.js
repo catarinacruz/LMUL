@@ -12,9 +12,8 @@
  * Date: 2016-05-20T17:17Z
  */
 
-(function( global, factory ) {
-
-	if ( typeof module === "object" && typeof module.exports === "object" ) {
+(function (global, factory) {"use strict";
+	if (typeof module === "object" && typeof module.exports === "object") {
 		// For CommonJS and CommonJS-like environments where a proper `window`
 		// is present, execute the factory and get jQuery.
 		// For environments that do not have a `window` with a `document`
@@ -23,104 +22,78 @@
 		// e.g. var jQuery = require("jquery")(window);
 		// See ticket #14549 for more info.
 		module.exports = global.document ?
-			factory( global, true ) :
-			function( w ) {
-				if ( !w.document ) {
-					throw new Error( "jQuery requires a window with a document" );
-				}
-				return factory( w );
-			};
+                factory(global, true) :
+			     function (w) {
+				    if (!w.document) {
+					    throw new Error("jQuery requires a window with a document");
+				    }
+				    return factory(w);
+                };
 	} else {
-		factory( global );
+		factory(global);
 	}
 
 // Pass this if window is not defined yet
-}(typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
+                            }(typeof window !== "undefined" ? window : this, function (window, noGlobal) {"use strict";
 
 // Support: Firefox 18+
 // Can't be in strict mode, several libs including ASP.NET trace
 // the stack via arguments.caller.callee and Firefox dies if
 // you try to trace through "use strict" call chains. (#13335)
 //"use strict";
-var deletedIds = [];
-
-var document = window.document;
-
-var slice = deletedIds.slice;
-
-var concat = deletedIds.concat;
-
-var push = deletedIds.push;
-
-var indexOf = deletedIds.indexOf;
-
-var class2type = {};
-
-var toString = class2type.toString;
-
-var hasOwn = class2type.hasOwnProperty;
-
-var support = {};
-
-
-
-var
-	version = "1.12.4",
+                                                                                                          var deletedIds = [], document = window.document, slice = deletedIds.slice, concat = deletedIds.concat, push = deletedIds.push, indexOf = deletedIds.indexOf, class2type = {}, toString = class2type.toString, hasOwn = class2type.hasOwnProperty, support = {},	version = "1.12.4";
 
 	// Define a local copy of jQuery
-	jQuery = function( selector, context ) {
-
+	jQuery = function (selector, context) {
 		// The jQuery object is actually just the init constructor 'enhanced'
 		// Need init if jQuery is called (just allow error to be thrown if not included)
-		return new jQuery.fn.init( selector, context );
-	},
+		return new jQuery.fn.init(selector, context);
+	};
 
 	// Support: Android<4.1, IE<9
 	// Make sure we trim BOM and NBSP
-	rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,
+	rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
 
 	// Matches dashed string for camelizing
-	rmsPrefix = /^-ms-/,
-	rdashAlpha = /-([\da-z])/gi,
+	rmsPrefix = /^-ms-/;
+	rdashAlpha = /-([\da-z])/gi;
 
 	// Used by jQuery.camelCase as callback to replace()
-	fcamelCase = function( all, letter ) {
+	fcamelCase = function (all, letter) {
 		return letter.toUpperCase();
 	};
 
-jQuery.fn = jQuery.prototype = {
-
+                                                                                                          jQuery.fn = jQuery.prototype = {
 	// The current version of jQuery being used
-	jquery: version,
-
-	constructor: jQuery,
+	    jquery: version,
+        constructor: jQuery,
 
 	// Start with an empty selector
-	selector: "",
+	    selector: "",
 
 	// The default length of a jQuery object is 0
-	length: 0,
+	    length: 0,
 
-	toArray: function() {
-		return slice.call( this );
-	},
+	    toArray: function () {
+		    return slice.call(this);
+	    },
 
 	// Get the Nth element in the matched element set OR
 	// Get the whole matched element set as a clean array
-	get: function( num ) {
-		return num != null ?
+	    get: function (num) {
+		    return num !== null ?
 
 			// Return just the one element from the set
-			( num < 0 ? this[ num + this.length ] : this[ num ] ) :
+			         (num < 0 ? this[num + this.length] : this[num]) :
 
 			// Return all the elements in a clean array
-			slice.call( this );
-	},
+			         slice.call(this);
+	    },
 
 	// Take an array of elements and push it onto the stack
 	// (returning the new matched element set)
-	pushStack: function( elems ) {
-
+	    pushStack: function (elems) {
+        
 		// Build a new jQuery matched element set
 		var ret = jQuery.merge( this.constructor(), elems );
 
