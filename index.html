@@ -114,15 +114,9 @@
                 <p>Internet allows us to create and share content with everyone. We can easily share our thoughts or ideias online, and receive rapid feedback. But this has opened a window to online hate - as it is so easy to speak your mind, you just do it and walk away. But what happens to the other person? Online hate has severe consequences, and anyone can be a victim. So it's important that we sensitize online users, specially young people, to it's consequences, and if possible, that we put an end to it.</p>
                 
                 <li>
-<<<<<<< Updated upstream
                         <a href="#" class="btn btn-default btn-lg" target="_blank"><span class="network-name">TRY THE EXPERIENCE</span></a>
                 </li>
             </div>
-=======
-                        <a href="experience/" class="btn btn-default btn-lg" target="_blank"><span class="network-name">TRY THE EXPERIENCE</span></a>
-            </li>
->>>>>>> Stashed changes
-        </div>
     </section>
     
     
@@ -179,8 +173,10 @@
                         </div>
                     <div class="col-sm-3">
                             <div class="team-member">
+                                <li class="juan">
                                 <img src="img/chars/2.jpg" class="img-responsive img-circle" alt="">
                                 <h4>Juan</h4>
+                                </li>
                                 <ul class="list-inline social-buttons">
                                     <li><a href="https://www.facebook.com/profile.php?id=100006323946920" target="_blank"><i class="fa fa-facebook"></i></a>
                                     </li>
@@ -189,8 +185,10 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="team-member">
-                                <img src="img/chars/3.jpg" class="img-responsive img-circle" alt="">
-                                <h4>Fernando</h4>
+                                <li class="fernando">
+                                    <img src="img/chars/3.jpg" class="img-responsive img-circle" alt="">
+                                    <h4>Fernando</h4>
+                                </li>
                                 <ul class="list-inline social-buttons">
                                     <li><a href="https://www.facebook.com/profile.php?id=100006323946920" target="_blank"><i class="fa fa-facebook"></i></a>
                                     </li>
@@ -200,8 +198,10 @@
                         <div class="col-sm-3">
                             <div class="team-member">
                                 <img src="img/chars/4.jpg" class="img-responsive img-circle" alt="">
+                                <li class="nashita">
                                 <h4>Nashita</h4>
                                 <ul class="list-inline social-buttons">
+                                </li>
                                     <li><a href="https://www.facebook.com/profile.php?id=100006323946920" target="_blank"><i class="fa fa-facebook"></i></a>
                                     </li>
                                 </ul>
@@ -320,32 +320,28 @@
         </div>
     </section>
 
-    <!-- Contact Section
+    <!-- Contact Section-->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contacts </h2>
-                <p>Feel free to contacts and tell your story so together we can stop this new form of hate! </p>
-                <p>The secretary:
-                    <a href="mailto:youth.nohatespeech@coe.int">youth.nohatespeech@coe.int</a>
-                </p>
-                <p>The moderators:
-                    <a href="mailto:info@nohatespeechmovement.org">info@nohatespeechmovement.org</a>
-                </p>
+                <p>Feel free to contact us through
+                    <a href="mailto:hatelessexperience@gmail.com">hatelessexperience@gmail.com</a>
+                    </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://www.facebook.com/hatelessproject/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
                     <li>
                         <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
-    </section> -->
+    </section> 
 
     <!-- Footer -->
     <footer>
@@ -378,10 +374,35 @@
 document.querySelector('li.veronica').onclick = function(){
 	swal({
 		title: "Veronica",
-		text: "Here's a custom image.",
+		text: "",
 		imageUrl: 'img/chars/1.jpg'
 	});
 };
+    
+    
+document.querySelector('li.juan').onclick = function(){
+	swal({
+		title: "Juan",
+		text: "",
+		imageUrl: 'img/chars/2.jpg'
+	});
+};
+
+document.querySelector('li.fernando').onclick = function(){
+	swal({
+		title: "Fernando",
+		text: "",
+		imageUrl: 'img/chars/3.jpg'
+	});
+};
+
+document.querySelector('li.nashita').onclick = function(){
+	swal({
+		title: "Nashita",
+		text: "",
+		imageUrl: 'img/chars/4.jpg'
+	});
+};    
 
 </script>
 
