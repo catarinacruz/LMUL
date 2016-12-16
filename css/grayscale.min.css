@@ -278,6 +278,28 @@ a:hover {
     -o-background-size: cover
 }
 
+.split-section-p1 {
+    width: 100%;
+    padding: 250px 0;
+    color: #fff;
+    background: url(../img/school2.png) center center no-repeat #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
+}
+
+.split-section-p2 {
+    width: 100%;
+    padding: 200px 0;
+    color: #fff;
+    background: url(../img/ibiza1.jpg) center center no-repeat #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
+}
+
 .team-section {
     width: 100%;
     padding: 50px 0;
