@@ -9,7 +9,9 @@ html {
     height: 100%;
     width: 100%
 }
-.navbar-custom,
+.navbar-custom{
+    background-color: #000000
+}
 body {
     background-color: #FFF
 }
@@ -73,16 +75,18 @@ a:hover {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0)
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    
 }
 .navbar-custom .navbar-toggle {
-    color: #000000;
+    color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0);
     font-size: 12px
 }
 .navbar-custom .nav li a:active,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:hover {
+    color: #FFFFFF;
     background-color: transparent;
     outline: 0
 }
@@ -96,9 +100,10 @@ a:hover {
 .navbar-custom .navbar-brand:focus {
     outline: 0
 }
-.navbar-custom a {
-    color: rgba(255, 255, 255, 0)
+.navbar-custom.top-nav-collapse{
+    
 }
+
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -126,7 +131,7 @@ a:hover {
 }
 .navbar-custom.top-nav-collapse .navbar-toggle {
     color: #000000;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, 1);
     font-size: 12px
 }
 .navbar-custom.top-nav-collapse .nav li a:active,
@@ -180,8 +185,13 @@ a:hover {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         background: #000;
-        border-bottom: 1px solid rgba(255, 255, 255, .3)
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        display: none;
     }
+    
+    
+    
+
 }
 .intro {
     display: table;
