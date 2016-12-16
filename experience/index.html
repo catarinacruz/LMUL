@@ -36,8 +36,22 @@
     FB.init({
       appId      : '243326506072746',
       xfbml      : true,
-      version    : 'v2.6'
+      version    : 'v2.8'
     });
+      
+      
+      
+		    FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+		    		document.getElementById('status').innerHTML = 'We are connected.';
+		    		document.getElementById('login').style.visibility = 'hidden';
+		    	} else if (response.status === 'not_authorized') {
+		    		document.getElementById('status').innerHTML = 'We are not logged in.'
+		    	} else {
+		    		document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
+		    	}
+		    });
+      
   };
 
   (function(d, s, id){
@@ -47,9 +61,26 @@
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+    
+    
+    
+    
+    function login(){
+        FB.login(function(response) {
+                if (response.status === 'connected') {
+		    		document.getElementById('status').innerHTML = 'We are connected.';
+		    		document.getElementById('login').style.visibility = 'hidden';
+		    	} else if (response.status === 'not_authorized') {
+		    		document.getElementById('status').innerHTML = 'We are not logged in.'
+		    	} else {
+		    		document.getElementById('status').innerHTML = 'You are not logged into Facebook.';
+		    	}
+            });
+        }
 </script>
     
-
+<div id="status"></div>
+    
     <!-- Intro Header -->
      <header class="intro">
                 <div class="container">
@@ -57,7 +88,7 @@
                         <div class="container content-section text-center">
                                     <img src="img/logo_white.png">
                                     <ul class="list-inline banner-social-buttons">
-                                        <li>
+                                        <li onclick="login()">
                                             <a href="" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Login with Facebook</span></a>
                                         </li>
                                     </ul>
@@ -68,21 +99,5 @@
 
 
 </body>
-
-
-<script>
-
-FB.login(function(response) {
-  if (response.status === 'connected') {
-    // Logged into your app and Facebook.
-  } else if (response.status === 'not_authorized') {
-    // The person is logged into Facebook, but not your app.
-  } else {
-    // The person is not logged into Facebook, so we're not sure if
-    // they are logged into this app or not.
-  }
-});
-
-</script>
 
 </html>

@@ -76,7 +76,7 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0)
 }
 .navbar-custom .navbar-toggle {
-    color: #fff;
+    color: #000000;
     background-color: rgba(255, 255, 255, 0);
     font-size: 12px
 }
@@ -125,7 +125,7 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
 .navbar-custom.top-nav-collapse .navbar-toggle {
-    color: #fff;
+    color: #000000;
     background-color: rgba(255, 255, 255, .2);
     font-size: 12px
 }
