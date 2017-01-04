@@ -40,8 +40,7 @@
     });
       
       
-      
-		    FB.getLoginStatus(function(response) {
+      FB.getLoginStatus(function(response) {
 		    	if (response.status === 'connected') {
 		    	} else if (response.status === 'not_authorized') {
 		    		window.location="index.html";
@@ -60,43 +59,21 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
     
-    
-    
-    
-    function login(){
-        FB.login(function(response) {
-                if (response.status === 'connected') {
-                    window.location="chapter1.html";
-		    	} else if (response.status === 'not_authorized') {
-		    		window.location="index.html";
-		    	} else {
-		    		window.location="index.html";
-		    	}
-            });
-        }
 </script>
     
 <div id="status"></div>
     
-         <header class="intro">
-                <div class="container text-center">
+    <!-- Intro Header -->
+     <header class="intro">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="first-pannel"> 
-                                <div class="logo-white">
+                        <div class="container content-section text-center">
                                     <img src="img/logo_white.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
                                     <ul class="list-inline banner-social-buttons">
-                                            <li onclick="login(); return false;">
-                                                <a href="" class="btn btn-default-intro btn-lg"><span class="network-name">START THE EXPERIENCE</span></a>
-                                            </li>
-                                    </ul>                            
+                                        <li>
+                                            <a href="chapter1.html" class="btn btn-default btn-lg"><span class="network-name">START THE EXPERIENCE</span></a>
+                                        </li>
+                                    </ul>
                         </div>
                     </div>
                 </div>
