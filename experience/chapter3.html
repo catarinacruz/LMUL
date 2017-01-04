@@ -9,14 +9,11 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
         <title>HateLess</title>
-        
         <!-- Fonts -->
-        
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-        
+
+
+
+
         <!-- CSS -->
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -42,7 +39,52 @@
         </script>
 
     </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="checkStatus()">
+    
+    
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '243326506072746',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+      
+      
+      
+		    FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+		    	} else if (response.status === 'not_authorized') {
+		    		window.location="index.html";
+		    	} else {
+		    		window.location="index.html";
+		    	}
+		    });
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+        
+        
+        function checkStatus(){
+            FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+                    
+		    	} else if (response.status === 'not_authorized') {
+		    		window.location="index.html";
+		    	} else {
+		    		window.location="index.html";
+		    	}
+		    });
+        }
+    
+</script>
 
 <header>
         <div class="container">
@@ -55,11 +97,11 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="block wow fadeInRight" data-wow-delay="1s">
-                        <!--<a class="logo" href="#">
-                            <img src="img/" alt="">
-                        </a>-->
+                        <a class="logo" href="#">
+                            <img src="img/download/logo.pngl" alt="">
+                        </a>
                         <h2>Download the game and have fun!</h2>
-                        <p>Help us finish the story.</p>
+                        <p>Help us finish the story</p>
                         <div class="download-btn">
                             <a href="#" class="andriod">
                                 <img src="img/download/andriod-button.png" alt="">

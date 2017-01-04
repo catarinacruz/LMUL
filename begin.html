@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
+
+    <title>HateLess</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '243326506072746',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+      
+      
+      FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+		    	} else if (response.status === 'not_authorized') {
+		    		window.location="index.html";
+		    	} else {
+		    		window.location="index.html";
+		    	}
+		    });
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+    
+</script>
+    
+<div id="status"></div>
+    
+    <!-- Intro Header -->
+     <header class="intro">
+                <div class="container">
+                    <div class="row">
+                        <div class="container content-section text-center">
+                                    <img src="img/logo_white.png">
+                                    <ul class="list-inline banner-social-buttons">
+                                        <li>
+                                            <a href="chapter1.html" class="btn btn-default btn-lg"><span class="network-name">START THE EXPERIENCE</span></a>
+                                        </li>
+                                    </ul>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+
+</body>
+
+</html>

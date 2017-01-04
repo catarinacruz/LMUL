@@ -9,7 +9,9 @@ html {
     height: 100%;
     width: 100%
 }
-.navbar-custom,
+.navbar-custom{
+    background-color: #000000
+}
 body {
     background-color: #FFF
 }
@@ -30,7 +32,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6{
     text-transform: uppercase;
     font-family:  Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
@@ -39,7 +41,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6{
     margin: 0 0 35px;
     font-weight: 700;
     letter-spacing: 1px
@@ -73,16 +75,18 @@ a:hover {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0)
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    
 }
 .navbar-custom .navbar-toggle {
-    color: #fff;
+    color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0);
     font-size: 12px
 }
 .navbar-custom .nav li a:active,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:hover {
+    color: #FFFFFF;
     background-color: transparent;
     outline: 0
 }
@@ -125,8 +129,8 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
 .navbar-custom.top-nav-collapse .navbar-toggle {
-    color: #fff;
-    background-color: rgba(255, 255, 255, .2);
+    color: #000000;
+    background-color: rgba(255, 255, 255, 1);
     font-size: 12px
 }
 .navbar-custom.top-nav-collapse .nav li a:active,
@@ -180,8 +184,12 @@ a:hover {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         background: #000;
-        border-bottom: 1px solid rgba(255, 255, 255, .3)
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
     }
+    
+    
+    
+
 }
 .intro {
     display: table;
@@ -198,6 +206,7 @@ a:hover {
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+    text-align:center
 }
 @media (min-width: 768px) {
     .intro {
@@ -277,6 +286,28 @@ a:hover {
     -o-background-size: cover
 }
 
+.split-section-p1 {
+    width: 100%;
+    padding: 250px 0;
+    color: #fff;
+    background: url(../img/school2.png) center center no-repeat #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
+}
+
+.split-section-p2 {
+    width: 100%;
+    padding: 200px 0;
+    color: #fff;
+    background: url(../img/ibiza1.jpg) center center no-repeat #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
+}
+
 .team-section {
     width: 100%;
     padding: 50px 0;
@@ -330,13 +361,25 @@ a:hover {
     border-radius: 0
 }
 .btn-default {
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
+    border: 1px solid #a00202;
+    color: #840202;
     background-color: transparent
 }
 .btn-default:focus,
 .btn-default:hover {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #840202;
+    outline: 0;
+    color: #FFF;
+    background-color: #840202
+}
+.btn-default-intro {
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: transparent
+}
+.btn-default-intro:focus,
+.btn-default-intro:hover {
+    border: 1px solid #FFF;
     outline: 0;
     color: #FFF;
     background-color: rgba(255,255,255,0.5);
@@ -412,7 +455,11 @@ img::-moz-selection {
     margin: 0 auto;
 }
 
-
+.first-pannel .logo-white img{
+    width: 50%;
+    display: block;
+    margin: 0 auto 2em;
+}
 .team-member {
   text-align: center;
   margin-bottom: 50px;
@@ -451,8 +498,4 @@ h6{
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
-}
-
-img{
-    width: 30%;
 }
