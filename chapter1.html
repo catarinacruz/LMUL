@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
+
+    <title>HateLess</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+     <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    
+    <!-- SweetAlert -->
+    <script src="dist/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="dist/sweetalert.css">
+    <!--.......................-->
+    
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="checkStatus()">
+    
+    
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '243326506072746',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+      
+      
+      
+		    FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+		    	} else if (response.status === 'not_authorized') {
+		    		window.location="index.html";
+		    	} else {
+		    		window.location="index.html";
+		    	}
+		    });
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+        
+        
+        function checkStatus(){
+            FB.getLoginStatus(function(response) {
+		    	if (response.status === 'connected') {
+                    
+		    	} else if (response.status === 'not_authorized') {
+		    		window.location="index.html";
+		    	} else {
+		    		window.location="index.html";
+		    	}
+		    });
+        }
+    
+</script>
+    
+<!-- Intro Header -->
+    <header class="intro text-center">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="team-member">
+                            <br><br>
+                            <li class="veronica">
+                                <h1>CHAPTER 1</h1>
+                                <img src="img/chars/1.png" class="img-responsive img-circle" alt="">
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-down">
+                    <a href="#experience" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
+    </header>
+     <section id="experience" class="container content-section text-center"> 
+         <h2>Veronica's Story</h2>
+         <p>Veronica had a very happy childhood – great friends and good grades at school. Growing up, Veronica revealed herself as the quiet and reserved type of girl who would always sit in the corner, observing her surroundings. But things changed as she entered high school – it was like puberty came a bit late for her: around her 17’s, Veronica decided to change her look, started smoking and drinking with friends, and became part of a group of friends whose leader was Catherine, an old colleague of her. She became more self-confident at this time, and this had repercussions for others as well – the boys now find Veronica attractive. Those were happy times. However, on summer vacations, Veronica meets new people, and even gets involved romantically with a few – now that she has gained confidence, she wants to experience the world at its fullest. But her school friends don’t see things that way – they see Veronica’s new friendships and relationships as betrayal, and so start to insult her in school, in front of everyone, and to spread out nasty rumours about the girl – they call Veronica a “whore”, and a “traitor”. </p>
+         </section>
+         
+         <section id="split" class="content-section text-center">
+            <div class="split-section-p1">
+                 <div class="container"> </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="container content-section text-center">
+         
+        <p>Back to school, Veronica is heartbroken by her so called “friends” behaviour towards her. All of a sudden the entire school believes her bullies’ stories and starts treating her as bad as they do… She feels completely alone and shattered, and starts cutting herself and drinking more. She cannot bear to talk about the situation with her parents, so she fakes it all at home.</p>
+         
+        <p> A new year ends at school, and during summer vacations, all seems to be alright, but she starts receiving text messages with insults, and the nightmare continues, now outside school - Veronica falls apart in front of the entire family. As her mother finds the truth, she decides that her daughter has to be transferred to another school. In the end of the summer, Catherine’s dog, Rudolf, dies. Veronica and Catherina adopted and raised Rudolf together for many years, when they were still kids. Somehow, the shared pain of Rudolf’s dead brings the two friends back together, and now Catherine supports Veronica against the whole school, and convinces the friend not to be transferred. </p>
+        
+        <p>Back at school, and with Catherine by her side, Veronica feels stronger, and better prepared to face all the bullies. But the attacks become worse and worse, and the bullies start to attack Catherine as well… Veronica cannot accept that this falls upon her friend as it did on her – and this resolution gives her a new strength to fight, instead of just diving on her pain, once again. She decides to act against all the attacks, and so she and Catherine start to gather all the proofs they can and finally share the situation with their families and report it to the school director. The main bullies are identified and expelled, which makes the rest of the school afraid of perpetuating the situation, and so it finally stops. </p>
+    </section>
+    
+    <section id="split" class="content-section text-center">
+            <div class="split-section-p2">
+                 <div class="container"> </div>
+            </div>
+        </section>
+    
+    <section id="experience" class="container content-section text-center">
+        <p>The friends graduate successfully and their parents offer them a trip to Ibiza, in Spain. On the trip, Veronica reflects on her past and realizes that we cannot fully rely on others – they may not be there for you when you most need them… To believe in oneself and to be strong is everything. During the vacations, the friends meet a nice Spanish boy named Juan that seems to have a special interest on Veronica… However, Veronica is not the same, so she keeps some distance with the new friend and doesn’t gives him full trust right way, even if he seems such a nice guy... but Juan seems determinate, and accepts the challenge.</p>
+        
+        <li>
+            <a href="chapter2.html" class="btn btn-default btn-lg" target="_top"><span class="network-name">NEXT PAGE</span></a>
+        </li>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; HateLess 2016</p>
+            <img src="img/feup_logo_gray.png" height="35px">
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+    
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    
+</body>
+
+</html>
