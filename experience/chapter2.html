@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,13 +23,179 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
     
-    <!-- SweetAlert -->
-    <script src="dist/sweetalert-dev.js"></script>
-    <link rel="stylesheet" href="dist/sweetalert.css">
-    <!--.......................-->
-    
+
+
+	<link rel="stylesheet" type="text/css" href="scroll/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="scroll/examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(comic/bg1.jpg);
+	}
+	#section0 h1{
+		margin-top: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(comic/page1.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide2{
+		background-image: url(comic/page2.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide3{
+		background-image: url(comic/page3.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide4{
+		background-image: url(comic/page4.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide5{
+		background-image: url(comic/page5.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide6{
+		background-image: url(comic/page6.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide7{
+		background-image: url(comic/page7.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide8{
+		background-image: url(comic/page8.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide9{
+		background-image: url(comic/page9.png);
+		background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+	}
+		#slide10{
+		background-image: url(comic/bg1.jpg);
+		background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: gray;
+		padding: 0;
+		position: relative;
+	}
+		#slide10 a{
+			position: absolute;
+			  top: 50%; left: 50%;
+			  transform: translate(-50%,-50%);
+		}
+
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="scroll/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="scroll/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="scroll/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+
+				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+				css3:false
+			});
+		});
+	</script>
+
 </head>
-    
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="checkStatus()">
     
     
@@ -77,11 +242,11 @@
         }
     
 </script>
-    
-    
-    
-    <header class="intro text-center">
-                <div class="row">
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="row">
                     <div class="col-md-4 col-md-offset-4">
                         <div class="team-member">
                             <br><br>
@@ -93,38 +258,30 @@
                     </div>
                 </div>
                 <div class="arrow-down">
-                    <a href="#comic" class="btn btn-circle page-scroll">
+                    <a href="#section1" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
-    </header>
-    
-    <section class="comic">
-    
-    
-    </section>
 
-     <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; HateLess 2016</p>
-            <img src="img/feup_logo_gray.png" height="35px">
-        </div>
-    </footer>
-    
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide" id="slide1"></div>
+		<div class="slide" id="slide2"></div>
+		<div class="slide" id="slide3"></div>
+		<div class="slide" id="slide4"></div>
+		<div class="slide" id="slide5"></div>
+		<div class="slide" id="slide6"></div>
+		<div class="slide" id="slide7"></div>
+		<div class="slide" id="slide8"></div>
+		<div class="slide" id="slide9"></div>
+		<div class="slide" id="slide10">
+            <a href="chapter3.html" class="btn btn-default-intro btn-lg" target="_top"><span class="network-name">NEXT PAGE</span></a>
+		</div>
+	</div>
 
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
-    
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+</div>
+
 </body>
 </html>
